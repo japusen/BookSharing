@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+{% load staticfiles %}
+<html>
+	<head>
+		<title>SB Books</title>
+		<link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Rajdhani:300,500"/> <!-- Rajdhani font from Google-->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"> <!-- Bootstrap css -->
+		<link rel="stylesheet" type="text/css" href="{% static 'login/home.css' %}"/> <!-- css for home page -->
+		<script src="{% static 'login/jquery-2.1.1.js' %}"></script> <!-- jquery -->
+	
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script> <!-- Bootsrap js -->
+		<script type="text/javascript" src="{% static 'login/home.js' %}"></script> <!-- js for home page -->
+	</head>
+
+	<body>
+		<div class="container-fluid"> <!-- page container -->
+			<div class="row"> <!-- row for title. 4 wide offset: 4 -->
+				<div class="col-md-4 col-md-offset-4" id="title">
+					<p><span id="header1">SB</span><span id="header2">Books</span></p>
+				</div>
+			</div>
+
+			<div class="row box"> <!-- sign in box -->
+				<div class="col-md-4 col-md-offset-4">
+					<!--Input forms-->
+					<form class="form-horizontal" id="loginForm" role="form" method="post">
+					{% csrf_token %}
+						<div class="form-group" id="forUmail">
+							<input class="form-control" id="inputUmail" type="email" name="umail" placeholder="Umail" autofocus>
+						</div>
+						<div class="form-group" id="forPass">
+							<input class="form-control" id="inputPassword" type="password" name="password" placeholder="Password" >
+						</div>
+						<div class="form-group">
+							<button class="btn btn-primary btn-block" type="submit">Sign In</button>
+						</div>
+					</form>
+
+					<!-- Register modal button -->
+					<button class="btn btn-info" data-toggle="modal" data-target="#myModal">Register</button>
+
+					<!-- Modal -->
+					<div class="modal fade" id="myModal" tabindex="-1" aria-labelledby="myModalLabel" aria-hidden="true">
+						<div class="modal-dialog">
+							<div class="modal-content">
+								<div class="modal-header">
+									<button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+									<h4 class="modal-title" id="myModalLabel">Register</h4>
+								</div>
+								<div class="modal-body">
+									<!-- Input form -->
+									<form class="form" id="registerForm" role="form" method="post">
+									{% csrf_token %}
+										<div class="form-group regForm" id="forRU">
+											<label for="regUmail">Enter umail</label>
+											<input type="email" class="form-control" id="regUmail" name="regUmail"  data-toggle="tooltip" title="Must be @umail.ucsb.edu">
+										</div>
+										<div class="form-group regForm" id="forRP">
+											<label for="regPassword">Choose password</label>
+											<input type="password" class="form-control" id="regPassword" name="regPassword" data-toggle="tooltip" title="Must be between 5 and 15 characters. A-Z, a-z, 0-9">
+										</div>
+										<div class="form-group regForm" id="forRFP">
+											<label for="finalPassword">Verify password</label>
+											<input type="password" class="form-control" id="finalPassword" name="finalPassword">
+										</div>
+										<div class="form-group regForm" id="forRUN"> <!-- class: has-success has-feedback -->
+											<label for="userName">Select username</label>
+											<input type="text" class="form-control" id="userName" name="userName" data-toggle="tooltip" title="Must be between 5 and 15 characters. A-Z, a-z, 0-9">
+											<!-- <span class="glyphicon glyphicon-ok form-control-feedback" id="icon"></span> -->
+										</div>
+										<div class="form-group regForm">
+											<button type="submit" name="process" value="register" class="btn btn-primary">Submit</button>
+										</div>
+									</form>
+								</div>
+								<div class="modal-footer">
+									<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+									
+								</div>
+							</div>
+						</div>
+					</div><!-- Modal -->
+				</div><!-- Column 4 wide offset 4 -->
+			</div><!-- New row for input Box -->
+		</div><!-- Container -->
+	</body>
+</html>
