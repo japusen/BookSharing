@@ -5,24 +5,16 @@ from django.core.exceptions import ObjectDoesNotExist
 from django.http import JsonResponse
 from django.core.context_processors import csrf
 from login.models import UserInfo
-
+from django.shortcuts import redirect
+from django.core.urlresolvers import reverse
 
 def index(request):
     #return HttpResponse("Hello, world. You're at the polls index.")
-    return render(request, 'login/home.html')
+    return render(request, 'login/login.html')
 
 def login(request):
 	if request.method == 'POST':
-		umail = request.POST.get('umail', '')
-		#check if valid user
-		try:
-			user = UserInfo.objects.get(pk=umail)
-			password = user.password
-		except ObjectDoesNotExist:
-			umail = ''
-			password = ''
-		response = {'umail': umail, 'password': password}
-		return JsonResponse(response)
+		return render(request, 'home.html')
 
 def checkValue(request):
 	c = {}

@@ -4,28 +4,34 @@ body {
 	background-image: url("images/p4.png");
 }
 
-#title {
-	margin-top: 10%;
-	text-align: center;
-	font-size: 10em;
-}
-
-#header1 {
+#sb {
 	color: #0000B2;
 }
 
-#header2 {
+#b {
 	color: #FFCC00;
 }
 
-#icon {
-	margin-top: 1%;
+#search {
+	padding-top: 0.25%;
+	margin-left: 56%;
 }
 
-.btn-info {
-	margin-left: 42%;
+#dept {
+	font-size: 3em;
 }
 
-.regForm {
+.navbar-brand {
+	font-size: 4em;
+}
+
+.glyphicon-cog {
 	font-size: 2em;
+}
+
+#cog {
+	padding-right: 1%;
+}
+.container-fluid {
+	/*background-image: url("images/creampaper.png");*/
 }
