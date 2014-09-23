@@ -22,7 +22,7 @@
 			<div class="row box"> <!-- sign in box -->
 				<div class="col-md-4 col-md-offset-4">
 					<!--Input forms-->
-					<form class="form-horizontal" id="loginForm" role="form" method="post">
+					<form class="form-horizontal" id="loginForm" role="form" method="post" action="/home/">
 					{% csrf_token %}
 						<div class="form-group" id="forUmail">
 							<input class="form-control" id="inputUmail" type="email" name="umail" placeholder="Umail" autofocus>

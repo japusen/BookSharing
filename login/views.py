@@ -9,12 +9,22 @@ from django.shortcuts import redirect
 from django.core.urlresolvers import reverse
 
 def index(request):
-    #return HttpResponse("Hello, world. You're at the polls index.")
     return render(request, 'login/login.html')
 
-def login(request):
+def home(request):
+	return render(request, 'login/home.html')
+
+def checklogin(request):
 	if request.method == 'POST':
-		return render(request, 'home.html')
+		umail = request.POST.get('umail', '')
+		#check if valid user
+		try:
+			user = UserInfo.objects.get(pk=umail)
+		except ObjectDoesNotExist:
+			response = {'success': 'false', 'umail': '', 'password': ''}
+			return JsonResponse(response)
+		response = {'success': 'true', 'umail': user.umail, 'password': user.password}
+		return JsonResponse(response)
 
 def checkValue(request):
 	c = {}

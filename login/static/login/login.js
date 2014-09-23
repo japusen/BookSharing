@@ -35,34 +35,17 @@ $(document).ready(function() {
 
     if(umail != "" && password != "") //umail and password filled in
     {
-      $.post("login/", $("#loginForm").serialize()); 
-        /*function(data) {
-          if(data.fail === "fail")
-          {
-            if(data.umail != "") //valid umail
-            {
-              console.log(data.umail);
-              console.log(data.password);
-              console.log(password);
-              if(password != data.password)
-                $("#forPass").addClass("has-error");
-            }
-            else //invalid umail
-            {
-              console.log("there");
-              console.log(data.umail);
-              console.log(data.password);
-              console.log(password);
-              $("#forUmail").addClass("has-error");
-              if(password != data.password)
-                $("#forPass").addClass("has-error");
-            }
-          }
-          else
-          {
-            console.log("success");
-          }*/
-        //});
+      $.post("checklogin/", $("#loginForm").serialize(), function(data) {
+        if(data.success === "false") //invalid umail
+            $("#forUmail").addClass("has-error");
+        else //valid umail
+        {
+          if(password != data.password) //invalid password
+            $("#forPass").addClass("has-error");
+          else //valid password
+              window.location = "/home/";
+        }
+      });
     }
   });
 
