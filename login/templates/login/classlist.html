@@ -1,0 +1,16 @@
+{% extends "login/base.html" %}
+{% load static %}
+
+{% block css %}<link rel="stylesheet" type="text/css" href="{% static 'login/classlist.css' %}"/>{% endblock %}
+
+{% block content %}
+<div class="row">
+	<div class="col-md-11 col-md-offset-1">
+		{% for class in classlist %}
+			<p class="class"><a href="/dept/{{ class.dept }}/{{ class.courseNo }}/" class="link"/>{{ class.dept }} {{ class.courseNo}} - {{ class.courseTitle }}</p>
+		{% empty %}
+			<p>There appears to be no classes</p>
+		{% endfor %}
+	</div>
+</div>
+{% endblock %}

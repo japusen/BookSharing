@@ -4,15 +4,12 @@ from django.template import RequestContext
 from django.core.exceptions import ObjectDoesNotExist
 from django.http import JsonResponse
 from django.core.context_processors import csrf
-from login.models import UserInfo
 from django.shortcuts import redirect
 from django.core.urlresolvers import reverse
+from login.models import UserInfo, Recently_Submitted, Department, Course, Books
 
 def index(request):
     return render(request, 'login/login.html')
-
-def home(request):
-	return render(request, 'login/home.html')
 
 def checklogin(request):
 	if request.method == 'POST':
@@ -55,3 +52,15 @@ def register(request):
 		insert = UserInfo(umail=umail, password=password, username=username)
 		insert.save()
 		return HttpResponse()
+
+def home(request):
+	recent_list = Recently_Submitted.objects.order_by('-date')[:10]
+	return render(request, 'login/home.html', {'recent_list': recent_list})
+
+def deptlist(request):
+	depts = Department.objects.order_by('deptName')
+	return render(request, 'login/dept.html', {'depts': depts})
+
+def classlist(request, department):
+	classlist = Course.objects.filter(dept=department).order_by('courseCode')
+	return render(request, 'login/classlist.html', {'classlist': classlist})

@@ -11,7 +11,57 @@ class Migration(migrations.Migration):
 
     operations = [
         migrations.CreateModel(
-            name='User',
+            name='Books',
+            fields=[
+                ('id', models.AutoField(verbose_name='ID', serialize=False, auto_created=True, primary_key=True)),
+                ('title', models.CharField(max_length=100)),
+                ('author', models.CharField(max_length=50)),
+                ('edition', models.IntegerField()),
+                ('dLink', models.URLField()),
+                ('fileType', models.CharField(max_length=10, choices=[(b'pdf', b'pdf'), (b'epub', b'epub'), (b'djvu', b'djvu'), (b'torrent', b'torrent'), (b'other', b'other')])),
+                ('upvotes', models.IntegerField()),
+                ('downvotes', models.IntegerField()),
+            ],
+            options={
+            },
+            bases=(models.Model,),
+        ),
+        migrations.CreateModel(
+            name='Course',
+            fields=[
+                ('courseCode', models.CharField(max_length=15, serialize=False, primary_key=True)),
+                ('courseTitle', models.CharField(max_length=50)),
+                ('courseNo', models.IntegerField()),
+            ],
+            options={
+            },
+            bases=(models.Model,),
+        ),
+        migrations.CreateModel(
+            name='Department',
+            fields=[
+                ('dept', models.CharField(max_length=10, serialize=False, primary_key=True)),
+                ('deptName', models.CharField(max_length=50)),
+            ],
+            options={
+            },
+            bases=(models.Model,),
+        ),
+        migrations.CreateModel(
+            name='Recently_Submitted',
+            fields=[
+                ('id', models.AutoField(verbose_name='ID', serialize=False, auto_created=True, primary_key=True)),
+                ('courseCode', models.CharField(max_length=15)),
+                ('courseTitle', models.CharField(max_length=50)),
+                ('title', models.CharField(max_length=100)),
+                ('date', models.DateTimeField()),
+            ],
+            options={
+            },
+            bases=(models.Model,),
+        ),
+        migrations.CreateModel(
+            name='UserInfo',
             fields=[
                 ('umail', models.EmailField(max_length=75, serialize=False, primary_key=True)),
                 ('password', models.CharField(max_length=15)),
@@ -20,5 +70,17 @@ class Migration(migrations.Migration):
             options={
             },
             bases=(models.Model,),
+        ),
+        migrations.AddField(
+            model_name='course',
+            name='dept',
+            field=models.ForeignKey(to='login.Department'),
+            preserve_default=True,
+        ),
+        migrations.AddField(
+            model_name='books',
+            name='course',
+            field=models.ForeignKey(to='login.Course'),
+            preserve_default=True,
         ),
     ]

@@ -1,0 +1,14 @@
+.deptartment {
+	display: inline-block;
+	width: 33%;
+}
+
+.link {
+	font-size: 1.5em;
+	color: black;
+}
+
+a:hover {
+    text-decoration: none;
+    color: #0000B2;
+}

@@ -1,0 +1,14 @@
+{% extends "login/base.html" %}
+{% load static %}
+
+{% block css %}<link rel="stylesheet" type="text/css" href="{% static 'login/dept.css' %}"/>{% endblock %}
+
+{% block content %}
+<div class="row" id="row">
+	<div class="col-md-11 col-md-offset-1" id="col">
+		{% for dept in depts %}
+		<p class="deptartment"><a href="/dept/{{ dept.dept }}/" class="link"/>{{ dept.deptName }} - {{ dept.dept}}</p>
+		{% endfor %}
+	</div>
+</div>
+{% endblock %}

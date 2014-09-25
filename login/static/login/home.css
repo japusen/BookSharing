@@ -1,37 +1,3 @@
-body {
-	font-size: 100%;
-	font-family: Rajdhani;
-	background-image: url("images/p4.png");
-}
-
-#sb {
-	color: #0000B2;
-}
-
-#b {
-	color: #FFCC00;
-}
-
-#search {
-	padding-top: 0.25%;
-	margin-left: 56%;
-}
-
-#dept {
-	font-size: 3em;
-}
-
-.navbar-brand {
-	font-size: 4em;
-}
-
-.glyphicon-cog {
-	font-size: 2em;
-}
-
-#cog {
-	padding-right: 1%;
-}
-.container-fluid {
-	/*background-image: url("images/creampaper.png");*/
+#recentTable {
+	background: white;
 }
