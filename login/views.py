@@ -6,6 +6,7 @@ from django.http import JsonResponse
 from django.core.context_processors import csrf
 from django.shortcuts import redirect
 from django.core.urlresolvers import reverse
+import urllib
 from login.models import UserInfo, Recently_Submitted, Department, Course, Books
 
 def index(request):
@@ -62,5 +63,5 @@ def deptlist(request):
 	return render(request, 'login/dept.html', {'depts': depts})
 
 def classlist(request, department):
-	classlist = Course.objects.filter(dept=department).order_by('courseCode')
+	classlist = Course.objects.filter(dept=department).order_by('courseNo')
 	return render(request, 'login/classlist.html', {'classlist': classlist})

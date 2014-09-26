@@ -7,7 +7,7 @@
 <div class="row" id="row">
 	<div class="col-md-11 col-md-offset-1" id="col">
 		{% for dept in depts %}
-		<p class="deptartment"><a href="/dept/{{ dept.dept }}/" class="link"/>{{ dept.deptName }} - {{ dept.dept}}</p>
+		<p class="deptartment"><a href="/dept/{{ dept.dept|urlencode }}/" class="link"/>{{ dept.deptName }} - {{ dept.dept}}</p>
 		{% endfor %}
 	</div>
 </div>

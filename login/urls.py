@@ -8,6 +8,6 @@ urlpatterns = patterns('',
     url(r'^register/$', views.register, name='register'),
     url(r'^checkValue/$', views.checkValue, name='checkValue'),
     url(r'^dept/$', views.deptlist, name='deptlist'),
-    url(r'^dept/(?P<department>[A-Z]+)/$', views.classlist, name='classlist'),
-    url(r'^dept/(?P<department>[A-Z]+)/(?P<course>[A-Z]+)/$', views.classlist, name='classlist'),
+    url(r'^dept/(?P<department>[^/]+)/$', views.classlist, name='classlist'),
+    url(r'^dept/(?P<department>[^/]+)/(?P<course>[^/]+)/$', views.classlist, name='classlist'),
 )
