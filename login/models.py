@@ -17,8 +17,9 @@ class Department(models.Model):
 class Course(models.Model):
 	dept = models.ForeignKey('Department')
 	courseCode = models.CharField(max_length=15, primary_key=True)
-	courseTitle = models.CharField(max_length=50)
+	courseTitle = models.CharField(max_length=100)
 	courseNo = models.IntegerField()
+	courseLetter = models.CharField(max_length=10, blank=True)
 	def __unicode__(self):
 	    return "Course: %s, Dept: %s, Title: %s" % (self.courseCode, self.dept, self.courseTitle)
 

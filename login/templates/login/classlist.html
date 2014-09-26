@@ -7,9 +7,9 @@
 <div class="row">
 	<div class="col-md-11 col-md-offset-1">
 		{% for class in classlist %}
-			<p class="class"><a href="/dept/{{ class.dept|urlencode }}/{{ class.courseNo|urlencode }}/" class="link"/>{{ class.dept }} {{ class.courseNo}} - {{ class.courseTitle }}</p>
+			<p class="class"><a href="/dept/{{ class.dept.dept|urlencode }}/{{ class.courseNo|urlencode }}{{ class.courseLetter|urlencode }}/" class="link"/>{{ class.dept.dept }} {{ class.courseNo }}{{ class.courseLetter }} - {{ class.courseTitle }}</p>
 		{% empty %}
-			<p>There appears to be no classes</p>
+			<p id="none">There appears to be no classes</p>
 		{% endfor %}
 	</div>
 </div>

@@ -1,0 +1,19 @@
+.class {
+	display: inline-block;
+	width: 49%;
+}
+
+.link {
+	font-size: 1.5em;
+	color: black;
+}
+
+a:hover {
+    text-decoration: none;
+    color: #0000B2;
+}
+
+#none {
+	font-size: 2em;
+	color: black;
+}

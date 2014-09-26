@@ -1,0 +1,178 @@
+ANTH 2. Introductory Cultural Anthropology
+ANTH 3. Introductory Archaeology
+ANTH 3SS. Introduction to Archaeology
+ANTH 5. Introductory Biological Anthropology
+ANTH 5H. Introductory Physical Anthropology Honors
+ANTH 7. Introductory Biosocial Anthropology
+ANTH 9. Methods in the Human Behavioral Sciences
+ANTH 99. Independent Studies
+ANTH 100. Basic Archaeological Concepts 
+ANTH 101. African Archaeology 
+ANTH 102A. Introduction to Women, Culture, and Development 
+ANTH 102B. Seminar in Women, Culture, and Development 
+ANTH 103A. Anthropology of China 
+ANTH 103B. Anthropology of Japan 
+ANTH 103C. Anthropology of Contemporary Korea 
+ANTH 104H. People, Poverty, and Environment in Central America 
+ANTH 105. Human Variation 
+ANTH 106. History of Anthropological Theory 
+ANTH 106A. From Ape to Cyborg: New Debates on Human Nature 
+ANTH 106B. Ritual and Violence. 
+ANTH 107. Psychological Anthropology 
+ANTH 108. Educating the Native 
+ANTH 109. Human Universals 
+ANTH 110. Technology and Culture 
+ANTH 111. The Anthropology of Food 
+ANTH 112. Bioarchaeology 
+ANTH 112Z. Theoretical Approaches in Contemporary Archaeology 
+ANTH 113. Indigenous People and the Nation State in the Americas 
+ANTH 113FB. Science and Society 
+ANTH 114. Social Organization 
+ANTH 115. Language, Culture, and Place 
+ANTH 116A. Myth, Ritual and Symbol 
+ANTH 116B. Anthropological Approaches to Religion 
+ANTH 116C. Anthropology of Religion Practicum 
+ANTH 117. Borders and Borderlands 
+ANTH 118TS. Archaeology of the Ancient Near East 
+ANTH 119. Household Archaeology 
+ANTH 120. The Family 
+ANTH 121. Human Evolution 
+ANTH 121T. Genetics, Natural Selection, and Human Evolution 
+ANTH 122. Anthropology of World Systems 
+ANTH 123MG. Anthropological Data Analysis 
+ANTH 125. Anthropology of Gender 
+ANTH 127. Hunters and Gatherers 
+ANTH 128. The Archaeology of Gender 
+ANTH 129. Ethnographic Research Methods: Ethics and Engagement 
+ANTH 129MG. Behavioral Ecology of Hunter Gatherers 
+ANTH 130A. Coupled Human and Natural Systems: Risks, Vulnerability, Resilience, and Disasters 
+ANTH 130B. Global Tourism and Environmental Conservation 
+ANTH 130C. Global Food Systems and Human Food Security 
+ANTH 131. North American Indians 
+ANTH 131CA. California Indians 
+ANTH 132TS. Ceramic Analysis in Archaeology 
+ANTH 133. Cultural Development in Mesoamerica 
+ANTH 134. Modern Cultures of Latin America 
+ANTH 135. Modern Mexican Culture 
+ANTH 136. Peoples and Cultures of the Pacific 
+ANTH 137. The Ancient Maya 
+ANTH 138TS. Archaeology of Egypt 
+ANTH 139. Indigenous Peoples 
+ANTH 139MG. Indigenous Peoples of the Amazon 
+ANTH 141. Agriculture and Society in Mexico: Past and Present 
+ANTH 142. Peoples and Cultures of India 
+ANTH 143. Introduction to Contemporary Social Theory 
+ANTH 143F. Ethics in Archaeology 
+ANTH 144. The Archaeology of Warfare 
+ANTH 145. Anthropological Demography and Life History 
+ANTH 146. Development Anthropology 
+ANTH 147. Water and Society 
+ANTH 148. Ecological Anthropology 
+ANTH 148A. Comparative Ethnicity 
+ANTH 148MH. Aesthetic Anthropology 
+ANTH 149. World Agriculture, Food, and Population 
+ANTH 150B. Archaeology of Andean Civilizations 
+ANTH 150C. The Inca Empire 
+ANTH 151T. Evolutionary Psychology 
+ANTH 152. Environmental Anthropology 
+ANTH 153. Seminar on Primate and Human Sexual Behavior 
+ANTH 153S. The Evolution of Human Sexuality 
+ANTH 153T. Primate Behavior 
+ANTH 154. Special Topics in Social Anthropology 
+ANTH 155. Prehistory of California and the Great Basin 
+ANTH 156. Understanding Africa 
+ANTH 158. Cultural and Biological Diversity of Food Plants 
+ANTH 160. Cultural Ecology 
+ANTH 161. Human Growth and Development 
+ANTH 162. Prehistoric Food Production 
+ANTH 163. Archaeology of North America 
+ANTH 164. The Origins of Complex Societies 
+ANTH 165. History of Archaeology 
+ANTH 166. Climate Change in Prehistory 
+ANTH 166BT. Biotechnology, Food, and Agriculture 
+ANTH 166FP. Small-Scale Food Production 
+ANTH 167. People of the Ice Age 
+ANTH 168. Ethnology in Rural California: Transformations in Agriculture, Farm Labor, and Rural Communities 
+ANTH 168H. Gauchos, Cowboys, and Indians 
+ANTH 168JH. Gauchos, Cowboys, and Indians 
+ANTH 169. Evolution of Cooperation 
+ANTH 171. Evolutionary Medicine 
+ANTH 172. Colonialism and Culture 
+ANTH 175. Southwestern Archaeology 
+ANTH 176TS. Ancient Egyptian Religion 
+ANTH 177AB. Human Reproduction Ecology and Endocrinology 
+ANTH 178. Internship in Archaeological Record-Keeping and Collections 
+ANTH 180A. Osteology 
+ANTH 180B. Osteology 
+ANTH 181. Methods and Techniques of Field Archaeology 
+ANTH 182. Quantitative Data Analysis in Archaeology 
+ANTH 182M. Introduction to Lithic Analysis 
+ANTH 183. Internship in Archaeological Resource Management 
+ANTH 184. Settlement Pattern Analysis in Archaeology 
+ANTH 185. Human Environmental Rights 
+ANTH 186. Lab Course in Paleoethnobotany 
+ANTH 186Z. Lab Course in Zooarchaeology 
+ANTH 187. The Clash of Cultures 
+ANTH 188. The Seacoast in Prehistory 
+ANTH 189. Problems in European Prehistory 
+ANTH 190. Cultural Anthropology Internship 
+ANTH 191. Indigenous Movements in Asia 
+ANTH 191A. Prehistoric and Early Historic Artifacts: Technology of Their Manufacture and Use 
+ANTH 191B. Analysis of Archaeological Materials 
+ANTH 192AB. Developmental Plasticity and Evolution 
+ANTH 194. Field Training Archaeology 
+ANTH 194P. Practicum in Field and Laboratory Analysis 
+ANTH 195A. Senior Honors Program 
+ANTH 195B. Senior Honors Program 
+ANTH 196. Archaeology of Religion 
+ANTH 197AAZZ. Special Courses 
+ANTH 198. Independent Readings in Anthropology 
+ANTH 199. Independent Studies in Anthropology 
+ANTH 199RA. Undergraduate Research Assistance Training in Anthropology 
+ANTH 201A. Classical Archaeological Theory 
+ANTH 201B. Contemporary Archaeology Theory 
+ANTH 206AAZZ. Current Problems in Archaeology 
+ANTH 207. Problems in Hunter-Gatherer Archaeology 
+ANTH 208. Anthropological Political Economy 
+ANTH 210. Basic Issues in Physical Anthropology 
+ANTH 214. The Origins and Intensification of Agriculture 
+ANTH 217. Biotechnology, Food, and Agriculture 
+ANTH 218. Problems in Andean Archaeology 
+ANTH 222. Ethnicity and Race in the Americas 
+ANTH 223. Feminist Theory and Ethnographic Practice 
+ANTH 225. Peasants and Industrialization: "Traditional" Rural Societies 
+ANTH 226. Religion, Media, and Culture 
+ANTH 228. Culture and Spatial Practice 
+ANTH 229. Ethnographic Research Methods: Ethics and Engagement 
+ANTH 230. History of Cultural Anthropology 
+ANTH 232. Graduate Proseminar 
+ANTH 234. Advanced Theory and Method in Evolutionary Psychology 
+ANTH 235A. Foundations of Modern Social Theory 
+ANTH 235B. Issues in Contemporary Anthropology 
+ANTH 239A. Research Design and Writing in Archaeology 
+ANTH 240A. Research Methods in Cultural Anthropology 
+ANTH 240B. Research Design and Writing in Sociocultural Anthropology 
+ANTH 240C. Research Seminar in Cultural Anthropology 
+ANTH 241. Contemporary Topics in Biological Anthropology 
+ANTH 243. Archaeology of Warfare 
+ANTH 244. Pedagogical Methods and Strategies in Biological Anthropology 
+ANTH 245A. Quantitative Data Analysis Archaeology 
+ANTH 245B. Quantitative Data Analysis in Archaeology 
+ANTH 250AAZZ. Method and Theory in Anthropology 
+ANTH 250SS. Methods and Theory in Antropology 
+ANTH 251. Methods of Prehistoric Subsistence Analysis 
+ANTH 253. Human Biology Laboratory Methods 
+ANTH 256. Modeling Social Behavior 
+ANTH 257. Human Behavioral Ecology Theory and Method 
+ANTH 260. Applied Data Analysis in R 
+ANTH 266FP. Small-Scale Food Production 
+ANTH 273. Archaeology of Identity 
+ANTH 275. Problems in Archaeological Ceramic Analysis 
+ANTH 276. Culture Contact and Interaction 
+ANTH 277. Faculty Graduate Proseminar 
+ANTH 501. Teaching Assistant Practicum 
+ANTH 594. Field Research Training 
+ANTH 596. Directed Reading and Research 
+ANTH 597. Individual Study for Master's Comprehensive Examinations 
+ANTH 598. Master's Thesis and Pre-Candidacy Preparation 
+ANTH 599. Dissertation Research and Preparation 

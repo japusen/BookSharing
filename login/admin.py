@@ -11,7 +11,7 @@ class DeptAdmin(admin.ModelAdmin):
 	search_fields = ['deptName']
 
 class CourseAdmin(admin.ModelAdmin):
-	list_display = ('courseCode', 'courseTitle')
+	list_display = ('dept', 'courseCode', 'courseNo', 'courseLetter', 'courseTitle')
 	search_fields = ['courseCode']
 
 class BookAdmin(admin.ModelAdmin):
