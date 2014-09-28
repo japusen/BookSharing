@@ -9,5 +9,6 @@ urlpatterns = patterns('',
     url(r'^checkValue/$', views.checkValue, name='checkValue'),
     url(r'^dept/$', views.deptlist, name='deptlist'),
     url(r'^dept/(?P<department>[^/]+)/$', views.classlist, name='classlist'),
-    url(r'^dept/(?P<department>[^/]+)/(?P<course>[^/]+)/$', views.classlist, name='classlist'),
+    url(r'^dept/(?P<department>[^/]+)/(?P<code>[0-9]+[A-Z]{0,5})/$', views.course, name='course'),
+    url(r'^addBook/$', views.addBook, name='addBook'),
 )

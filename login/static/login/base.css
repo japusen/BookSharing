@@ -17,6 +17,12 @@ body {
 	margin-left: 53%;
 }
 
+#sbtn {
+	padding-top: 0.1%;
+	background: transparent; 
+	border: none;
+}
+
 #dept {
 	font-size: 3em;
 }

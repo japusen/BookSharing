@@ -37,15 +37,13 @@ class Books(models.Model):
 		('other', 'other')
 	)
 	fileType = models.CharField(max_length=10, choices=file_type_choices)
-	upvotes = models.IntegerField()
-	downvotes = models.IntegerField()
+	upvotes = models.IntegerField(default=0)
+	downvotes = models.IntegerField(default=0)
 	def __unicode__(self):
 	    return "Course: %s, Title: %s, author: %s, edition: %s" % (self.course, self.title, self.author, self.edition)
 
 class Recently_Submitted(models.Model):
-	courseCode = models.CharField(max_length=15)
-	courseTitle = models.CharField(max_length=50)
-	title = models.CharField(max_length=100)
-	date = models.DateTimeField()
+	book = models.ForeignKey('Books')
+	date = models.DateTimeField(auto_now_add=True)
 	def __unicode__(self):
-	    return "Course: %s, Course title: %s, Book title: %s" % (self.courseCode, self.courseTitle, self.title)
+	    return "Course: %s, Course title: %s, Book title: %s" % (self.book.course.courseCode, self.book.course.courseTitle, self.book.title)

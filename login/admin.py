@@ -19,8 +19,8 @@ class BookAdmin(admin.ModelAdmin):
 	search_fields = ['course', 'title']
 
 class RecentSubAdmin(admin.ModelAdmin):
-	list_display = ('courseCode', 'title', 'date')
-	search_fields = ('courseCode', 'title', 'date')
+	list_display = ('book', 'date')
+	search_fields = ('book', 'date')
 
 admin.site.register(UserInfo, UserAdmin)
 admin.site.register(Department, DeptAdmin)

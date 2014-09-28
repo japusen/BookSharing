@@ -1,3 +1,12 @@
 #recentTable {
 	background: white;
 }
+
+a:hover {
+    text-decoration: none;
+    color: #0000B2;
+}
+
+a {
+	color: #0000B2;
+}

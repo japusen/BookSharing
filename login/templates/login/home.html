@@ -14,14 +14,18 @@
 		            <th>Course</th>
 		            <th>Course title</th>
 		            <th>Book title</th>
+		            <th>Edition</th>
+		            <th>Author</th>
 		        </tr>
 		    </thead>
 		    <tbody>
-		    	{% for book in recent_list %}
+		    	{% for entry in recent_list %}
 		    	<tr>
-		    		<td>{{ book.courseCode }}</td>
-		    		<td>{{ book.courseTitle }}</td>
-		    		<td>{{ book.title }}</td>
+		    		<td><a href="/dept/{{entry.book.course.dept.dept}}/{{entry.book.course.courseNo}}{{entry.book.course.courseLetter}}/"/>{{ entry.book.course.courseCode }}</td>
+		    		<td>{{ entry.book.course.courseTitle }}</td>
+		    		<td>{{ entry.book.title }}</td>
+		    		<td>{{ entry.book.edition }}</td>
+		    		<td>{{ entry.book.author }}</td>
 		    	</tr>
 		    	{% endfor %}
 		    </tbody>

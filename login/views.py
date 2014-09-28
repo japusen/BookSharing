@@ -7,6 +7,7 @@ from django.core.context_processors import csrf
 from django.shortcuts import redirect
 from django.core.urlresolvers import reverse
 import urllib
+from datetime import datetime
 from login.models import UserInfo, Recently_Submitted, Department, Course, Books
 
 def index(request):
@@ -65,3 +66,28 @@ def deptlist(request):
 def classlist(request, department):
 	classlist = Course.objects.filter(dept=department).order_by('courseNo')
 	return render(request, 'login/classlist.html', {'classlist': classlist})
+
+def course(request, department, code):
+	try:
+		course = Course.objects.get(pk="%s %s" % (department, code))
+	except ObjectDoesNotExist:
+		return render(request, 'login/course.html', {'course': [], 'books': []})
+	books = Books.objects.filter(course=course)
+	return render(request, 'login/course.html', {'course': course, 'books': books})
+
+def addBook(request):
+	if request.method == 'POST':
+		courseCode = request.POST.get('courseCode', '')
+		title = request.POST.get('title', '')
+		author = request.POST.get('author', '')
+		edition = request.POST.get('edition', '')
+		link = request.POST.get('link', '')
+		try:
+			course = Course.objects.get(pk=courseCode)
+		except ObjectDoesNotExist:
+			return JsonResponse({'success': 'fail'})
+		newBook = Books(course=course, title=title, author=author, edition=edition, dLink=link)
+		newBook.save()
+		recent = Recently_Submitted(book=newBook)
+		recent.save()
+		return JsonResponse({'success': 'pass'})
