@@ -11,4 +11,5 @@ urlpatterns = patterns('',
     url(r'^dept/(?P<department>[^/]+)/$', views.classlist, name='classlist'),
     url(r'^dept/(?P<department>[^/]+)/(?P<code>[0-9]+[A-Z]{0,5})/$', views.course, name='course'),
     url(r'^addBook/$', views.addBook, name='addBook'),
+    url(r'^search/$', views.search, name='search'),
 )

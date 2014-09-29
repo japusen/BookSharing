@@ -91,3 +91,18 @@ def addBook(request):
 		recent = Recently_Submitted(book=newBook)
 		recent.save()
 		return JsonResponse({'success': 'pass'})
+
+def search(request):
+	if request.method == 'GET':
+		sinput = request.GET.get('course')
+		try:
+			department = sinput.split(" ", 1)[0].upper()
+			code = sinput.split(" ", 1)[1].upper()
+		except IndexError: #invalid input
+			return render(request, 'login/course.html', {'course': [], 'books': []})
+		try:
+			course = Course.objects.get(pk="%s %s" % (department, code))
+		except ObjectDoesNotExist:
+			return render(request, 'login/course.html', {'course': [], 'books': []})
+		books = Books.objects.filter(course=course)
+		return render(request, 'login/course.html', {'course': course, 'books': books})
