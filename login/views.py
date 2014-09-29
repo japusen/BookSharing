@@ -8,7 +8,10 @@ from django.shortcuts import redirect
 from django.core.urlresolvers import reverse
 import urllib
 from datetime import datetime
-from login.models import UserInfo, Recently_Submitted, Department, Course, Books
+from django.contrib.auth.models import User
+from login.models import Recently_Submitted, Department, Course, Books
+from django.contrib.auth.decorators import login_required
+from django.contrib.auth import authenticate, login, logout
 
 def index(request):
     return render(request, 'login/login.html')
@@ -16,13 +19,23 @@ def index(request):
 def checklogin(request):
 	if request.method == 'POST':
 		umail = request.POST.get('umail', '')
+		password = request.POST.get('password', '')
 		#check if valid user
+
+		print "%s %s" % (umail, password)
+
 		try:
-			user = UserInfo.objects.get(pk=umail)
+			user = User.objects.get(email=umail)
 		except ObjectDoesNotExist:
-			response = {'success': 'false', 'umail': '', 'password': ''}
+			response = {'success': 'false', 'password': ''}
 			return JsonResponse(response)
-		response = {'success': 'true', 'umail': user.umail, 'password': user.password}
+		valid = authenticate(username=user.username, email=umail, password=password)
+		if valid is not None:
+			login(request, valid)
+			response = {'success': 'true', 'password': 'valid'}
+			return JsonResponse(response)
+		else:
+			response = {'success': 'true', 'password': 'invalid'}
 		return JsonResponse(response)
 
 def checkValue(request):
@@ -32,14 +45,14 @@ def checkValue(request):
 		if(request.GET.get('type') == 'umail'): #check umail
 			umail = request.GET.get('umail', '')
 			try:
-				user = UserInfo.objects.get(umail=umail)
+				user = User.objects.get(email=umail)
 			except ObjectDoesNotExist:
 				return JsonResponse({'taken': 'no'})
 			return JsonResponse({'taken': 'yes'})
 		else:
 			username = request.GET.get('userName', '')
 			try:
-				user = UserInfo.objects.get(username=username)
+				user = User.objects.get(username=username)
 			except ObjectDoesNotExist:
 				return JsonResponse({'taken': 'no'})
 			return JsonResponse({'taken': 'yes'})
@@ -48,25 +61,28 @@ def register(request):
 	if request.method == 'POST':
 		umail = request.POST.get('regUmail', '')
 		password = request.POST.get('regPassword', '')
-		verify = request.POST.get('finalPassword', '')
 		username = request.POST.get('userName', '')
 
-		insert = UserInfo(umail=umail, password=password, username=username)
-		insert.save()
+		user = User.objects.create_user(username, umail, password)
+		user.save()
 		return HttpResponse()
 
+@login_required
 def home(request):
 	recent_list = Recently_Submitted.objects.order_by('-date')[:10]
 	return render(request, 'login/home.html', {'recent_list': recent_list})
 
+@login_required
 def deptlist(request):
 	depts = Department.objects.order_by('deptName')
 	return render(request, 'login/dept.html', {'depts': depts})
 
+@login_required
 def classlist(request, department):
 	classlist = Course.objects.filter(dept=department).order_by('courseNo')
 	return render(request, 'login/classlist.html', {'classlist': classlist})
 
+@login_required
 def course(request, department, code):
 	try:
 		course = Course.objects.get(pk="%s %s" % (department, code))
@@ -75,6 +91,7 @@ def course(request, department, code):
 	books = Books.objects.filter(course=course)
 	return render(request, 'login/course.html', {'course': course, 'books': books})
 
+@login_required
 def addBook(request):
 	if request.method == 'POST':
 		courseCode = request.POST.get('courseCode', '')
@@ -92,6 +109,7 @@ def addBook(request):
 		recent.save()
 		return JsonResponse({'success': 'pass'})
 
+@login_required
 def search(request):
 	if request.method == 'GET':
 		sinput = request.GET.get('course')
@@ -106,3 +124,8 @@ def search(request):
 			return render(request, 'login/course.html', {'course': [], 'books': []})
 		books = Books.objects.filter(course=course)
 		return render(request, 'login/course.html', {'course': course, 'books': books})
+
+@login_required
+def logout_view(request):
+    logout(request)
+    return HttpResponseRedirect(reverse('index'))

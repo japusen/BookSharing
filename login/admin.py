@@ -1,11 +1,8 @@
 from django.contrib import admin
-from login.models import UserInfo, Department, Course, Books, Recently_Submitted
+from login.models import Department, Course, Books, Recently_Submitted
+from django.contrib.auth.models import User
 
 # Register your models here.
-class UserAdmin(admin.ModelAdmin):
-	list_display = ('umail', 'password', 'username')
-	search_fields = ['umail', 'username']
-
 class DeptAdmin(admin.ModelAdmin):
 	list_display = ('dept', 'deptName')
 	search_fields = ['deptName']
@@ -22,7 +19,6 @@ class RecentSubAdmin(admin.ModelAdmin):
 	list_display = ('book', 'date')
 	search_fields = ('book', 'date')
 
-admin.site.register(UserInfo, UserAdmin)
 admin.site.register(Department, DeptAdmin)
 admin.site.register(Course, CourseAdmin)
 admin.site.register(Books, BookAdmin)

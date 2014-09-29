@@ -1,11 +1,10 @@
 from django.db import models
+from django.contrib.auth.models import User
 
-class UserInfo(models.Model):
-	umail = models.EmailField(primary_key=True)
-	password = models.CharField(max_length=15)
-	username = models.CharField(max_length=15, unique=True)
-	def __unicode__(self):
-	    return "Umail: %s, Password: %s, Username: %s" % (self.umail, self.password, self.username)
+# class UserProfile(models.Model):
+# 	user = models.OneToOneField(User)
+# 	def __unicode__(self):
+# 	    return "Umail: %s, Password: %s, Username: %s" % (self.user.email, self.user.password, self.user.username)
 
 
 class Department(models.Model):

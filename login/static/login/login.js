@@ -35,15 +35,16 @@ $(document).ready(function() {
 
     if(umail != "" && password != "") //umail and password filled in
     {
+      console.log(umail + " " + password);
       $.post("checklogin/", $("#loginForm").serialize(), function(data) {
         if(data.success === "false") //invalid umail
             $("#forUmail").addClass("has-error");
         else //valid umail
         {
-          if(password != data.password) //invalid password
+          if(data.password === "invalid") //invalid password
             $("#forPass").addClass("has-error");
           else //valid password
-              window.location = "/home/";
+            window.location = "/home/";
         }
       });
     }

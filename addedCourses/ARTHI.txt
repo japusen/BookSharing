@@ -1,0 +1,210 @@
+ARTHI 1. Introduction to Art
+ARTHI 5A. Introduction to Architecture and Environment
+ARTHI 6A. Art Survey I: Ancient-Medieval Art
+ARTHI 6B. Art Survey II: Renaissance-Baroque Art
+ARTHI 6C. Art Survey III: Modern-Contemporary Art
+ARTHI 6DS. Survey: History of Art in China
+ARTHI 6DW. Survey: Art of Japan and Korea
+ARTHI 6E. Survey: Arts of Africa, Oceania, and Native North America
+ARTHI 6F. Survey: Architecture and Planning
+ARTHI 6G. Survey: History of Photography
+ARTHI 6H. Survey: Pre-Columbian Art
+ARTHI 6K. Survey: Islamic Art and Architecture
+ARTHI 94S. Student Facilitated Group Studies Project
+ARTHI 101B. Classical Greek Art (480-320 BCE) 
+ARTHI 103A. Roman Architecture 
+ARTHI 103B. Roman Art: From the Republic to the Empire (509B.C. to A.D. 337) 
+ARTHI 103C. Greek Architecture 
+ARTHI 104. Special Topics in Classical Art and Architecture 
+ARTHI 105C. Medieval Architecture: From Constantine to Charlemagne 
+ARTHI 105E. The Origins of Romanesque Architecture 
+ARTHI 105G. Late Romanesque and Gothic Architecture 
+ARTHI 105K. Medieval Art: Italy, Thirteenth and Fourteenth Centuries 
+ARTHI 105L. Art and Society in Late-Medieval Tuscany 
+ARTHI 105M. The Design, Construction, and Structure of Medieval Architecture 
+ARTHI 106. Special Topics in Medieval Art 
+ARTHI 107A. Painting in the 15th-Century Netherlands 
+ARTHI 107B. Painting in the 16th-Century Netherlands 
+ARTHI 108. Special Topics in Fifteenth and Sixteenth Century Northern European Art 
+ARTHI 109A. Italian Renaissance Art: 1400-1500 
+ARTHI 109B. Italian Renaissance Art: 1500-1600 
+ARTHI 109C. Art as Technique, Labor, and Idea in Renaissance Italy 
+ARTHI 109D. Art and the Formation of Social Subjects in Early Modern Italy 
+ARTHI 109E. Michelangelo 
+ARTHI 109F. Italian Journeys 
+ARTHI 109G. Leonardo Da Vinci: Art, Science, and Technology in Early Modern Italy 
+ARTHI 109H. Art and Moral Values 
+ARTHI 110. Special Topics in Italian Renaissance Art 
+ARTHI 111B. Dutch Art in the Age of Rembrandt 
+ARTHI 111C. Dutch Art in the Age of Vermeer 
+ARTHI 111E. Gender and Power in Sixteenth and Seventeenth Century European Art 
+ARTHI 111F. Rethinking Rembrandt 
+ARTHI 112. Special Topics in Northern European Art. 
+ARTHI 113A. Seventeenth Century Art in Southern Europe 
+ARTHI 113B. Seventeenth Century Art in Italy I 
+ARTHI 113F. Bernini and the Age of the Baroque 
+ARTHI 114. Special Topics in Seventeenth Century Southern European Art 
+ARTHI 115A. Eighteenth-Century Art: 1685 to 1750 
+ARTHI 115B. Eighteenth-Century Art: 1750 to 1810 
+ARTHI 115C. Eighteenth-Century British Art and Culture 
+ARTHI 115D. Eighteenth-Century Art in Italy: The Age of the Grand Tour 
+ARTHI 115E. The Grand Tour: Experiencing Italy in the Eighteenth Century 
+ARTHI 116. Special Topics in Eighteenth Century Art 
+ARTHI 116EE. Theory and Historiography of Art 
+ARTHI 117A. Nineteenth-Century Art: 1800-1848 
+ARTHI 117B. Nineteenth-Century Art: 1848-1900 
+ARTHI 117C. Nineteenth-Century British Art and Culture 
+ARTHI 117D. Nineteenth-Century French Art 1800-1900 
+ARTHI 117E. Nineteenth-Century German Art 
+ARTHI 117F. Impressionism and Post-Impressionism 
+ARTHI 117G. Picasso 
+ARTHI 118AAZZ. Special Topics in Nineteenth Century Art 
+ARTHI 119A. Art in the Modern World 
+ARTHI 119B. Contemporary Art 
+ARTHI 119C. Expressionism to New Objectivity: Early Twentieth Century German Art 
+ARTHI 119D. Art in the Post-Modern World 
+ARTHI 119E. Early Twentieth Century European Art, 1900-1945 
+ARTHI 119F. Art of the Post-War Period, 1945-1968 
+ARTHI 119G. Critical Approaches to Visual Culture 
+ARTHI 120AAZZ. Special Topics in Twentieth-Century Modern Art 
+ARTHI 121A. American Art from Revolution to Civil War: 1700-1860 
+ARTHI 121B. Reconstruction, Renaissance, and Realism in American Art: 1860-1900 
+ARTHI 121C. Twentieth-Century American Art: Modernism and Pluralism, 1900-Present 
+ARTHI 121D. African American Art and the African Legacy 
+ARTHI 121F. History of Native Art and Architecture of North America 
+ARTHI 122. Special Topics in Art of the Americas 
+ARTHI 127A. African Art I 
+ARTHI 127B. African Art II 
+ARTHI 128. Special Topics in African Art 
+ARTHI 130A. Pre-Columbian Art of Mexico 
+ARTHI 130B. Pre-Columbian Art of the Maya 
+ARTHI 130C. The Arts of Spain and New Spain 
+ARTHI 130D. Pre-Columbian Art of South America 
+ARTHI 130E. Art and Empire in the Americas: Aztec, Inka, Spanish 
+ARTHI 132A. Mediterranean Cities 
+ARTHI 132B. The "Masterpiece" in Islamic Art and Architecture 
+ARTHI 132C. Architecture and Ideology from Constantine to Suleyman the Magnificent 
+ARTHI 132D. Islamic Architecture 650-1400 
+ARTHI 132E. Islamic Architecture 1400-Modern 
+ARTHI 132G. Monuments of Power 
+ARTHI 132I. Art of Empire 
+ARTHI 132J. Modern Art of the Arab World 
+ARTHI 132K. The Mosque in History 
+ARTHI 133AAZZ. Special Topics in Islamic Art 
+ARTHI 134A. Buddhist Art 
+ARTHI 134B. Early Chinese Art 
+ARTHI 134C. Chinese Painting I 
+ARTHI 134D. Art and Modern China 
+ARTHI 134E. The Art of the Chinese Landscape 
+ARTHI 134F. The Arts of Japan 
+ARTHI 134G. Japanese Painting 
+ARTHI 134H. Ukiyo-e: Pictures of the Floating World 
+ARTHI 134I. 20C Japanese Arts and Visual Culture 
+ARTHI 134J. Understanding Manga 
+ARTHI 135AAZZ. Special Topics in Asian Art 
+ARTHI 135AA. Special Topics in Japanese Art 
+ARTHI 135BB. Special Topics in Chinese Art 
+ARTHI 136A. Nineteenth-Century Architecture 
+ARTHI 136B. Twentieth-Century Architecture 
+ARTHI 136C. Architecture of the United States 
+ARTHI 136D. Design & the American Architect 
+ARTHI 136E. Modern Design 
+ARTHI 136H. Housing American Cultures 
+ARTHI 136I. The City in History 
+ARTHI 136J. Landscape of Colonialism 
+ARTHI 136K. Modern Architecture in Early Twentieth-Century Europe 
+ARTHI 136L. From Modernism to Post-Modernism in European Architecture 
+ARTHI 136M. Revival Styles in Southern Californian Architecture 
+ARTHI 136O. Sustainable Architecture: History and Aesthetics 
+ARTHI 136P. Frank Lloyd Wright 
+ARTHI 136Q. Deviant Domesticities 
+ARTHI 136R. Architecture of the Americas 
+ARTHI 136S. Contemporary Architecture 
+ARTHI 136V. Modern Indian Visual 
+ARTHI 136W. Introduction to 2D/3D Visualizations in Architecture 
+ARTHI 136X. Culture of Architecture: Perception and Analysis of the Built Environment 
+ARTHI 136Y. Modern Architecture in Southern California, C. 1890s to the Present 
+ARTHI 137AAZZ. Special Topics in Architecture 
+ARTHI 138B. Contemporary Photography 
+ARTHI 138C. Social Documentary Photography 
+ARTHI 138G. The Social Production of Art: Patrons, Dealers, Critics, Museums 
+ARTHI 139AAZZ. Special Topics in Photographic History 
+ARTHI 140A. Portraiture 
+ARTHI 140E. Landscape Design History 
+ARTHI 141A. Museum Practices and Techniques 
+ARTHI 141B. Internship 
+ARTHI 141C. Visual Technologies Internship 
+ARTHI 141D. Birth of the Modern Museum 
+ARTHI 141E. University Art Museum Internship 
+ARTHI 141F. Architecture and Design Collection Internship 
+ARTHI 142AAZZ. Special Topics in Architectural History 
+ARTHI 142A. Architecture and Planning in Seventeenth-Century Europe 
+ARTHI 142B. Architecture and Planning in Rome: Napoleon to Mussolini 
+ARTHI 142C. Paris and Rome in the Nineteenth Century 
+ARTHI 142D. Gardens, Land, and Landscape in the West: Renaissance to 1900 
+ARTHI 142E. Architecture, Planning, and Culture in Eighteenth-Century Paris 
+ARTHI 143C. Gender and Representation 
+ARTHI 144A. The Avantgarde in Russia 
+ARTHI 144C. Contemporary Art in Russia and Eastern Europe 
+ARTHI 144D. Russian Art 
+ARTHI 185AAZZ. Special topics in Art History 
+ARTHI 185AA. Special topics in Art History - Black Womanhood: Images, Icons, Ideologies 
+ARTHI 186B. Seminar in Ancient Greek & Roman Art/Architecture 
+ARTHI 186D. Seminar in Medieval Architecture & Sculpture 
+ARTHI 186E. Seminar in Fifteenth and Sixteenth Century Northern European Art 
+ARTHI 186F. Seminar in Fifteenth and Sixteenth Century Southern Renaissance 
+ARTHI 186G. Seminar in Seventeenth Century Northern European Art 
+ARTHI 186H. Seminar in Seventeenth Century Southern European Art 
+ARTHI 186I. Seminar in Eighteenth Century Art 
+ARTHI 186J. Seminar in Nineteenth Century Modern Art 
+ARTHI 186K. Seminar in Twentieth Century Modern Art & Visual Culture 
+ARTHI 186L. Seminar in Art of the Americas 
+ARTHI 186M. Seminar: Problems in The History of Chicano Art 
+ARTHI 186N. Seminar in African Art 
+ARTHI 186O. Seminar in Latin American Art 
+ARTHI 186P. Seminar in Pre-Columbian/Colonial Art: The Art of the Empire 
+ARTHI 186Q. Seminar in Islamic Art and Architecture 
+ARTHI 186R. Seminar in Asian Art 
+ARTHI 186RS. Seminar in Chinese Art 
+ARTHI 186RW. Seminar in Japanese Art 
+ARTHI 186SJ. Seminar in American Architectural History 
+ARTHI 186SR. Seminar in Architectural History 
+ARTHI 186SS. Seminar in Architectural History & Urbanism 
+ARTHI 186SV. Seminar in Modern Architecture 
+ARTHI 186T. Seminar in Photographic History 
+ARTHI 186V. Seminar: Theory, Method & Historiography 
+ARTHI 186Y. Seminar in Architecture and Environment 
+ARTHI 186Z. Seminar: Museum Practices & Techniques 
+ARTHI 194S. Student Facilitated Group Studies Project 
+ARTHI 198. Independent Readings in Art History 
+ARTHI 199. Independent Studies 
+ARTHI 199RA. Undergraduate Research Assistant 
+ARTHI 200A. Proseminar: Introduction to Art-Historical Methods 
+ARTHI 200B. Proseminar: Introduction to Art-Historical Methods 
+ARTHI 251A. Seminar: Topics in African & African-American Art 
+ARTHI 252B. Seminar: Topics in Roman Architecture and Urbanism 
+ARTHI 253D. Seminar: Topics in Medieval Architecture & Sculpture 
+ARTHI 254. Seminar: Topics in Pre-Columbian/Colonial Latin American Art 
+ARTHI 255D. Seminar: Topics in 15th & 16th C. Art in Northern Europe 
+ARTHI 257A. Seminar: Topics in Seventeenth-Century European Art 
+ARTHI 259A. Seminar: Topics in Nineteenth-Century European Art 
+ARTHI 260D. Seminar: Topics in European Art of the Twentieth Century 
+ARTHI 261A. Seminar: Topics in American Art 
+ARTHI 261E. Seminar: Topics in History of Photography 
+ARTHI 265. Seminar: Topics in Architectural History & Urbanism 
+ARTHI 266. Seminar: Topics in Early Modern Architecture 
+ARTHI 267. Seminar: Topics in Modern Architecture 
+ARTHI 275B. Seminar: Topics in Islamic Art & Architecture 
+ARTHI 282A. Seminar: Topics on East Asian Art 
+ARTHI 282B. Seminar: Topics of Japanese Art 
+ARTHI 294. Seminar: Museum Practices 
+ARTHI 295. Seminar: Advanced Readings in Art History 
+ARTHI 296A. READING CRITICAL THEORY AND THE VISUAL ARTS 
+ARTHI 297. Seminar: Getty Consortium 
+ARTHI 500. Apprentice Teaching 
+ARTHI 502. Graduate Symposium in Art History 
+ARTHI 595. Group Studies 
+ARTHI 596. Independent Study 
+ARTHI 597. Reading for Examination 
+ARTHI 598. Master's Thesis Preparation 
+ARTHI 599. Ph.D. Dissertation Preparation 
