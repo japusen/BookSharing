@@ -35,9 +35,9 @@ $(document).ready(function() {
 
     if(umail != "" && password != "") //umail and password filled in
     {
-      console.log(umail + " " + password);
+      //console.log(umail + " " + password);
       $.post("checklogin/", $("#loginForm").serialize(), function(data) {
-        if(data.success === "false") //invalid umail
+        if(data.exist === "false") //invalid umail
             $("#forUmail").addClass("has-error");
         else //valid umail
         {

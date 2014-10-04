@@ -1,17 +1,16 @@
-from django.shortcuts import render, render_to_response
+from django.shortcuts import render
 from django.http import HttpResponseRedirect, HttpResponse
-from django.template import RequestContext
 from django.core.exceptions import ObjectDoesNotExist
 from django.http import JsonResponse
 from django.core.context_processors import csrf
-from django.shortcuts import redirect
 from django.core.urlresolvers import reverse
 import urllib
-from datetime import datetime
 from django.contrib.auth.models import User
 from login.models import Recently_Submitted, Department, Course, Books
 from django.contrib.auth.decorators import login_required
 from django.contrib.auth import authenticate, login, logout
+
+
 
 def index(request):
     return render(request, 'login/login.html')
@@ -21,21 +20,18 @@ def checklogin(request):
 		umail = request.POST.get('umail', '')
 		password = request.POST.get('password', '')
 		#check if valid user
-
-		print "%s %s" % (umail, password)
-
 		try:
 			user = User.objects.get(email=umail)
 		except ObjectDoesNotExist:
-			response = {'success': 'false', 'password': ''}
+			response = {'exist': 'false', 'password': ''}
 			return JsonResponse(response)
 		valid = authenticate(username=user.username, email=umail, password=password)
 		if valid is not None:
 			login(request, valid)
-			response = {'success': 'true', 'password': 'valid'}
+			response = {'exist': 'true', 'password': 'valid'}
 			return JsonResponse(response)
 		else:
-			response = {'success': 'true', 'password': 'invalid'}
+			response = {'exist': 'true', 'password': 'invalid'}
 		return JsonResponse(response)
 
 def checkValue(request):
