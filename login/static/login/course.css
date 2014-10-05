@@ -1,21 +1,21 @@
 #header {
 	margin-top: 0%;
-	margin-left: 25%;
+	margin-left: 10%;
 }
 
 #bookTable {
-	margin-left: 25%;
+	margin-left: 10%;
 	background: white;
 	margin-bottom: 0%;
 }
 
 #emptyTable {
-	margin-left: 25%;
+	margin-left: 10%;
 	background: white;
 }
 
 #noClass {
-	margin-left: 55%;
+	margin-left: 65%;
 }
 
 a:hover {
@@ -27,32 +27,14 @@ a {
 	color: #0000B2;
 }
 
-.green {
-	color: #52CC29;
-}
-
-.red {
-	color: #FF1919;
-}
-
-.votes {
-	text-align: center;
-}
-
-#btn {
-	background:transparent; 
-	border:none;
-	float: right;
-}
-
 #bookTable_paginate {
-	margin-left: 27.5%;
+
 }
 
 #addBook {
 	display: inline-block;
 	margin-bottom: 1.5%;
-	margin-left: 25%;
+	margin-left: 10%;
 }
 
 .regForm {

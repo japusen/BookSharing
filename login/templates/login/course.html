@@ -12,7 +12,7 @@
 
 {% block content %}
 <div class="row">
-	<div class="col-md-8">
+	<div class="col-md-10">
 		{% if course %}
 		<h2 id="header">Books for {{ course.courseCode }}</h2>
 		<button type="button" class="btn btn-success btn-sm" id="addBook" data-toggle="modal" data-target="#myModal">Add a book!</button>
@@ -24,9 +24,8 @@
 		            <th>Edition</th>
 		            <th>Author</th>
 		            <th>Link</th>
-		            <!-- <th>File Type</th> -->
-		         	<th>Likes</th>
-		            <th>Dislikes</th>
+		         	<th>Uploader</th>
+		            <th>Date</th>
 		        </tr>
 		    </thead>
 		    <tbody>
@@ -36,9 +35,8 @@
 		    		<td class="col-md-1">{{ book.edition }}</td>
 		    		<td class="col-md-1">{{ book.author }}</td>
 		    		<td class="col-md-3"><a href="{{ book.dLink }}" target="_blank"/>{{ book.dLink }}</td>
-		    		<!-- <td class="col-md-1">{{ book.fileType }}</td> -->
-		    		<td class="col-md-1 votes">{{ book.upvotes }}<button id="btn" type="button"><span class="glyphicon glyphicon-thumbs-up green"></span></button></td>
-		    		<td class="col-md-1 votes">{{ book.downvotes }}<button id="btn" type="button"><span class="glyphicon glyphicon-thumbs-down red"></span></button></td>
+		    		<td class="col-md-1">{{ book.uploader }}</td>
+		    		<td class="col-md-1">{{ book.date }}</td>
 		    	</tr>
 		    	{% endfor %}
 		    </tbody>
@@ -51,9 +49,8 @@
 		            <th>Edition</th>
 		            <th>Author</th>
 		            <th>Link</th>
-		            <!-- <th>File Type</th> -->
-		         	<th>Likes</th>
-		            <th>Dislikes</th>
+		         	<th>Uploader</th>
+		            <th>Date</th>
 		        </tr>
 		    </thead>
 		</table>

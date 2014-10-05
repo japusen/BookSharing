@@ -32,16 +32,8 @@ class Books(models.Model):
 	author = models.CharField(max_length=50)
 	edition = models.IntegerField()
 	dLink = models.URLField()
-	file_type_choices = (
-		('pdf', 'pdf'),
-		('epub', 'epub'),
-		('djvu', 'djvu'),
-		('torrent', 'torrent'),
-		('other', 'other')
-	)
-	fileType = models.CharField(max_length=10, choices=file_type_choices)
-	upvotes = models.IntegerField(default=0)
-	downvotes = models.IntegerField(default=0)
+	uploader = models.CharField(max_length=20)
+	date = models.DateField(auto_now_add=True)
 	def __unicode__(self):
 	    return "Course: %s, Title: %s, author: %s, edition: %s" % (self.course, self.title, self.author, self.edition)
 

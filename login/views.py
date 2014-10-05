@@ -1,4 +1,4 @@
-from django.shortcuts import render
+from django.shortcuts import render, get_object_or_404
 from django.http import HttpResponseRedirect, HttpResponse
 from django.core.exceptions import ObjectDoesNotExist
 from django.http import JsonResponse
@@ -6,7 +6,7 @@ from django.core.context_processors import csrf
 from django.core.urlresolvers import reverse
 import urllib
 from django.contrib.auth.models import User
-from login.models import Recently_Submitted, Department, Course, Books
+from login.models import UserProfile, Recently_Submitted, Department, Course, Books
 from django.contrib.auth.decorators import login_required
 from django.contrib.auth import authenticate, login, logout
 from django.core.mail import send_mail
@@ -64,33 +64,24 @@ def register(request):
 		umail = request.POST.get('regUmail', '')
 		password = request.POST.get('regPassword', '')
 		username = request.POST.get('userName', '')
-		
 		salt = hashlib.sha1(str(random.random())).hexdigest()[:5]            
-        activation_key = hashlib.sha1(salt+umail).hexdigest()    
-
-		user = User.objects.create_user(username, umail, password)
-		user.is_active = False
-		user.save()
-		new_profile = UserProfile(user=user, activation_key=activation_key)
-		new_profile.save()
-
-		email_subject = 'SBB Account confirmation'
-        email_body = "Hey %s, thanks for signing up. To activate your account, click this link within \
-        	http://127.0.0.1:8000/confirm/%s" % (username, activation_key)
-
-        send_mail(email_subject, email_body, 'sbb.ucsb@gmail.com', [umail], fail_silently=True)
-		return HttpResponse()
+        activation_key = hashlib.sha1(salt+umail).hexdigest()
+        user = User.objects.create_user(username, umail, password)
+        user.is_active = False
+        user.save()
+        new_profile = UserProfile(user=user, activation_key=activation_key)
+        new_profile.save()
+        email_subject = 'SBB Account confirmation'
+        email_body = "Hey %s, thanks for signing up. To activate your account, click this link http://127.0.0.1:8000/confirm/%s" % (username, activation_key)
+        send_mail(email_subject, email_body, 'sbb.ucsb@gmail.com', [umail], fail_silently=False)
+        return HttpResponse()
 
 def confirm(request, key):
-	if request.user.is_authenticated():
-        HttpResponseRedirect('/home/')
-
-    # check if there is UserProfile which matches the activation key (if not then display 404)
-    user_profile = get_object_or_404(UserProfile, activation_key=key)
-    user = user_profile.user
-    user.is_active = True
-    user.save()
-    return HttpResponseRedirect('/')
+	user_profile = get_object_or_404(UserProfile, activation_key=key)
+	user = user_profile.user
+	user.is_active = True
+	user.save()
+	return HttpResponseRedirect('/')
 
 @login_required
 def home(request):
@@ -113,7 +104,7 @@ def course(request, department, code):
 		course = Course.objects.get(pk="%s %s" % (department, code))
 	except ObjectDoesNotExist:
 		return render(request, 'login/course.html', {'course': [], 'books': []})
-	books = Books.objects.filter(course=course)
+	books = Books.objects.filter(course=course).order_by('-date')
 	return render(request, 'login/course.html', {'course': course, 'books': books})
 
 @login_required
@@ -128,7 +119,7 @@ def addBook(request):
 			course = Course.objects.get(pk=courseCode)
 		except ObjectDoesNotExist:
 			return JsonResponse({'success': 'fail'})
-		newBook = Books(course=course, title=title, author=author, edition=edition, dLink=link)
+		newBook = Books(course=course, title=title, author=author, edition=edition, dLink=link, uploader=request.user.username)
 		newBook.save()
 		recent = Recently_Submitted(book=newBook)
 		recent.save()

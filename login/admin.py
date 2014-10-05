@@ -12,7 +12,7 @@ class CourseAdmin(admin.ModelAdmin):
 	search_fields = ['courseCode']
 
 class BookAdmin(admin.ModelAdmin):
-	list_display = ('course', 'title')
+	list_display = ('course', 'title', 'date')
 	search_fields = ['course', 'title']
 
 class RecentSubAdmin(admin.ModelAdmin):
