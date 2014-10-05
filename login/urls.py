@@ -13,4 +13,5 @@ urlpatterns = patterns('',
     url(r'^addBook/$', views.addBook, name='addBook'),
     url(r'^search/$', views.search, name='search'),
     url(r'^logout/$', views.logout_view, name='logout_view'),
+    url(r'^confirm/(?P<key>\w+)/', views.confirm, name='confirm'),
 )

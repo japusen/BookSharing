@@ -9,6 +9,8 @@ from django.contrib.auth.models import User
 from login.models import Recently_Submitted, Department, Course, Books
 from django.contrib.auth.decorators import login_required
 from django.contrib.auth import authenticate, login, logout
+from django.core.mail import send_mail
+import hashlib, random
 
 
 
@@ -27,9 +29,13 @@ def checklogin(request):
 			return JsonResponse(response)
 		valid = authenticate(username=user.username, email=umail, password=password)
 		if valid is not None:
-			login(request, valid)
-			response = {'exist': 'true', 'password': 'valid'}
-			return JsonResponse(response)
+			if user.is_active:
+				login(request, valid)
+				response = {'exist': 'true', 'password': 'valid'}
+				return JsonResponse(response)
+			else:
+				response = {'exist': 'true', 'password': 'not verified'}
+				return JsonResponse(response)
 		else:
 			response = {'exist': 'true', 'password': 'invalid'}
 		return JsonResponse(response)
@@ -58,10 +64,33 @@ def register(request):
 		umail = request.POST.get('regUmail', '')
 		password = request.POST.get('regPassword', '')
 		username = request.POST.get('userName', '')
+		
+		salt = hashlib.sha1(str(random.random())).hexdigest()[:5]            
+        activation_key = hashlib.sha1(salt+umail).hexdigest()    
 
 		user = User.objects.create_user(username, umail, password)
+		user.is_active = False
 		user.save()
+		new_profile = UserProfile(user=user, activation_key=activation_key)
+		new_profile.save()
+
+		email_subject = 'SBB Account confirmation'
+        email_body = "Hey %s, thanks for signing up. To activate your account, click this link within \
+        	http://127.0.0.1:8000/confirm/%s" % (username, activation_key)
+
+        send_mail(email_subject, email_body, 'sbb.ucsb@gmail.com', [umail], fail_silently=True)
 		return HttpResponse()
+
+def confirm(request, key):
+	if request.user.is_authenticated():
+        HttpResponseRedirect('/home/')
+
+    # check if there is UserProfile which matches the activation key (if not then display 404)
+    user_profile = get_object_or_404(UserProfile, activation_key=key)
+    user = user_profile.user
+    user.is_active = True
+    user.save()
+    return HttpResponseRedirect('/')
 
 @login_required
 def home(request):

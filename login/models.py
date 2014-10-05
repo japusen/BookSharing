@@ -5,7 +5,11 @@ from django.contrib.auth.models import User
 # 	user = models.OneToOneField(User)
 # 	def __unicode__(self):
 # 	    return "Umail: %s, Password: %s, Username: %s" % (self.user.email, self.user.password, self.user.username)
-
+class UserProfile(models.Model):
+    user = models.OneToOneField(User)
+    activation_key = models.CharField(max_length=40, blank=True)
+    def __unicode__(self):
+    	return "Umail: %s, Username: %s" % (self.user.email, self.user.username)
 
 class Department(models.Model):
 	dept = models.CharField(max_length=10, primary_key=True)

@@ -43,6 +43,8 @@ $(document).ready(function() {
         {
           if(data.password === "invalid") //invalid password
             $("#forPass").addClass("has-error");
+          else if(data.password === "not verified")
+            $("#forUmail").addClass("has-warning");
           else //valid password
             window.location = "/home/";
         }
